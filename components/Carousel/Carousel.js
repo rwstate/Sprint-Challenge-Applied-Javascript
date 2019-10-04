@@ -17,3 +17,60 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+function Carousel() {
+  let carousel = document.createElement("div");
+  let leftButt = document.createElement("div");
+  let img1 = document.createElement("img");
+  let img2 = document.createElement("img");
+  let img3 = document.createElement("img");
+  let img4 = document.createElement("img");
+  let rightButt = document.createElement("div");
+
+  carousel.classList.add("carousel");
+  leftButt.classList.add("left-button");
+  rightButt.classList.add("right-button");
+
+  leftButt.textContent = " < ";
+  rightButt.textContent = " > ";
+  img1.src = "./assets/carousel/mountains.jpeg";
+  img2.src = "./assets/carousel/computer.jpeg";
+  img3.src = "./assets/carousel/trees.jpeg";
+  img4.src = "./assets/carousel/turntable.jpeg";
+
+  let images = [img1, img2, img3, img4]
+  img1.style.display = "block"
+  let index = 0
+
+  leftButt.addEventListener("click", e => {
+    images[index].style.display = "none"
+    index -= 1
+    if (index < 0) {
+      index = 3
+    }
+    images[index].style.display = "block"
+  })
+
+  rightButt.addEventListener("click", e => {
+    images[index].style.display = "none"
+    index += 1
+    if (index > 3) {
+      index = 0
+    }
+    images[index].style.display = "block"
+  })
+
+  carousel.appendChild(leftButt);
+  carousel.appendChild(img1);
+  carousel.appendChild(img2);
+  carousel.appendChild(img3);
+  carousel.appendChild(img4);
+  carousel.appendChild(rightButt);
+
+  return carousel
+}
+
+let carouselCont = document.querySelector(".carousel-container");
+
+carouselCont.appendChild(Carousel())
+
