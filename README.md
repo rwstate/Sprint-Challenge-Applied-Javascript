@@ -29,15 +29,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+    The DOM is a javascript object that contains the elements of the webpage and how those elements should be displayed.
 
 2. What is an event?
+    An event occurs anytime a user interacts with the website.
 
 3. What is an event listener?
+    An event listener "listens" for an event and fires an event handler when it "hears" the event.
 
 4. Why would we convert a NodeList into an Array?
+    Once the nodelist is converted to an array, we can use array methods on it.
 
 5. What is a component?
-
+    A component is a reusable combination of html, css and js.
+    
 ### Git Set up
 
 * [ ] Fork the project into your GitHub user account
@@ -51,17 +56,17 @@ Your finished project must include all of the following requirements:
 
 * [x] Look through the HTML code and familiarize yourself with the different sections. Some of them already exist, but some need to be filled in. DO NOT add any code to the HTML file itself.
 
-* [ ] Following the instructions in the `Header/index.js` file, create the Header component. 
+* [x] Following the instructions in the `Header/index.js` file, create the Header component. 
 
-* [ ] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
+* [x] Following the instructions in the `Tabs/index.js` file, create individual Tabs components.
 
-* [ ] Following the instructions in the `Cards/index.js` file, create individual Cards components.
+* [x] Following the instructions in the `Cards/index.js` file, create individual Cards components.
 
 ## Stretch Problems
 
 Your stretch challenge is to write the functionality of a `Carousel` component. This is an advanced challenge, so you are not expected to be able to complete it. If you begin and don't finish, you should still submit with what you have. This is going to be a bit different because you are going to need to create some advanced functionality for the carousel. There is no need to request data for this exercise.
 
-* [ ] Complete the carousel functionality in `Carousel.js`
+* [x] Complete the carousel functionality in `Carousel.js`
 
 * [ ] If you complete the Carousel, add functionality so that the carousel slides when the buttons are pressed instead of just appearing.
 
